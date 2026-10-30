@@ -5,8 +5,6 @@
   "main": "src/server.js",
   "type": "commonjs",
   "scripts": {
-    "dev": "nodemon src/server.js",
-    "start": "node src/server.js",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev --name init",
     "prisma:seed": "node prisma/seed.js",
@@ -14,7 +12,7 @@
     "postinstall": "prisma generate",
     "build": "prisma generate",
     "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
     "setup": "npm install && npx prisma generate && npx prisma migrate dev --name init && npm run prisma:seed"
   },
   "dependencies": {
